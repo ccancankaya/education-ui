@@ -1,3 +1,3 @@
 # education-ui
 
-Backend ile iletişim için likler değiştirilmeli
+Çalıştırmadan önce npm i yapılmaya unutulmamalı

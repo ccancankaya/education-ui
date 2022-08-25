@@ -45,7 +45,7 @@ const AddEducationProgram = () => {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
 
-                    axios.post('https://localhost:7182/api/EducationProgram/add', values)
+                    axios.post('https://localhost:5000/api/EducationProgram/add', values)
                         .then(res => {
                             setSubmitting(false);
                             alertify.success(res.data)

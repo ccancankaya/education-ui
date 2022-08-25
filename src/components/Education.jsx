@@ -6,7 +6,7 @@ const Education = () => {
     const [educationList, setEducationList] = useState();
 
     useEffect(()=>{
-        axios.get('https://localhost:7182/api/Education/educations')
+        axios.get('https://localhost:5000/api/Education/educations')
         .then(res=>{
             const dataList=[]
             

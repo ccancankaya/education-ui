@@ -5,7 +5,7 @@ import alertify from 'alertifyjs';
 const EducationProgram = () => {
     const [educationProgramList, setEducationProgramList] = useState();
     useEffect(() => {
-        axios.get('https://localhost:7182/api/EducationProgram/programs')
+        axios.get('https://localhost:5000/api/EducationProgram/programs')
             .then(res => {
                 const dataList = []
 

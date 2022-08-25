@@ -8,7 +8,7 @@ const AddEducation = () => {
 
     useEffect(() => {
 
-        axios.get('https://localhost:7182/api/EducationProgram/programs')
+        axios.get('https://localhost:5000/api/EducationProgram/programs')
             .then(res => {
                 var list = res.data.map(item => {
                     return { id: item.id, name: item.programName }
@@ -40,7 +40,7 @@ const AddEducation = () => {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     
-                    axios.post('https://localhost:7182/api/Education/add', values)
+                    axios.post('https://localhost:5000/api/Education/add', values)
                         .then(res => {
                             setSubmitting(false);
                             alertify.success(res.data)

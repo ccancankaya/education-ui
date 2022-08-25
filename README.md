@@ -1,3 +1,3 @@
 # education-ui
 
-Çalıştırmadan önce npm i yapılmaya unutulmamalı
+Çalıştırmadan önce npm install yapılmaya unutulmamalı
